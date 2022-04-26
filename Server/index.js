@@ -30,7 +30,7 @@ userRouter.post('/post', (req, res)=>{
     })
     
 })
-// Get thte address on behalf of filter (District)
+// Get thte address on behalf of filter (city)
 userRouter.get('/getAddress/:key',async (req, res)=>{
     console.log(req.params.key);
    const addressData =  await Address.find({
